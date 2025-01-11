@@ -4,7 +4,7 @@ import Login from "./features/Auth/Login";
 import Register from "./features/Auth/Register";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import "./styles/App.css";
+import "./styles/app.css";
 
 const Layout = ({ children }) => (
   <div className="layout-container">
@@ -24,7 +24,6 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
         </Routes>
-
         </Layout>
       </Router>
     </div>
