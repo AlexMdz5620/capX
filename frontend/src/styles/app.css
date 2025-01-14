@@ -50,7 +50,8 @@ main {
 }
 
 /* Formularios */
-.login {
+.login,
+.register {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -63,6 +64,7 @@ main {
   flex-direction: column;
   gap: 10px;
   width: 300px;
+  height: fit-content;
   margin: 0 auto;
   padding: 20px;
   border: 1px solid #ccc;
@@ -281,6 +283,7 @@ button:hover {
 }
 
 .stock-card {
+  width: fit-content;
   border: 1px solid #ccc;
   border-radius: 8px;
   padding: 15px;

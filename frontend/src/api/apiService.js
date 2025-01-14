@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "http://localhost:8080", // Cambiar para producción si es necesario
+  baseURL: "https://capx-suc9.onrender.com", // Cambiar para producción si es necesario
 });
 
 // Funciones de usuario

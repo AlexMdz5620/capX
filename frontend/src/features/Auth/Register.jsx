@@ -37,57 +37,59 @@ const Register = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="form-register">
-      <h2>Registro</h2>
-      {error && <p className="error">{error}</p>}
-      <label>
-        Nombre de usuario:
-        <input
-          type="text"
-          name="name"
-          value={formData.name}
-          onChange={handleChange}
-          required
-          disabled={loading}
-        />
-      </label>
-      <label>
-        Correo:
-        <input
-          type="email"
-          name="email"
-          value={formData.email}
-          onChange={handleChange}
-          required
-          disabled={loading}
-        />
-      </label>
-      <label>
-        Contraseña:
-        <input
-          type="password"
-          name="password"
-          value={formData.password}
-          onChange={handleChange}
-          required
-          disabled={loading}
-        />
-      </label>
-      <label>
-        Confirmar Contraseña:
-        <input
-          type="password"
-          name="confirmPassword"
-          value={formData.confirmPassword}
-          onChange={handleChange}
-          required
-          disabled={loading}
-        />
-      </label>
-      <button type="submit" disabled={loading}>
-        {loading ? "Registrando..." : "Registrarse"}
-      </button>
-    </form>
+    <div className="register">
+      <form onSubmit={handleSubmit} className="form-register">
+        <h2>Registro</h2>
+        {error && <p className="error">{error}</p>}
+        <label>
+          Nombre de usuario:
+          <input
+            type="text"
+            name="name"
+            value={formData.name}
+            onChange={handleChange}
+            required
+            disabled={loading}
+          />
+        </label>
+        <label>
+          Correo:
+          <input
+            type="email"
+            name="email"
+            value={formData.email}
+            onChange={handleChange}
+            required
+            disabled={loading}
+          />
+        </label>
+        <label>
+          Contraseña:
+          <input
+            type="password"
+            name="password"
+            value={formData.password}
+            onChange={handleChange}
+            required
+            disabled={loading}
+          />
+        </label>
+        <label>
+          Confirmar Contraseña:
+          <input
+            type="password"
+            name="confirmPassword"
+            value={formData.confirmPassword}
+            onChange={handleChange}
+            required
+            disabled={loading}
+          />
+        </label>
+        <button type="submit" disabled={loading}>
+          {loading ? "Registrando..." : "Registrarse"}
+        </button>
+      </form>
+    </div>
   );
 };
 

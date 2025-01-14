@@ -24,7 +24,7 @@ const StockCard = ({ stock, userId, onDelete }) => {
       const details = await getStockOverview(stock.ticker); 
       console.log(details);
       alert(`Detalles del stock:
-        Símbolo: ${details.ticker || "N/A"}
+        Símbolo: ${details.symbol || "N/A"}
         Sector: ${details.Sector || "N/A"}
         Industria: ${details.Industry || "N/A"}
         Descripción: ${details.Description || "N/A"}
@@ -34,7 +34,6 @@ const StockCard = ({ stock, userId, onDelete }) => {
       console.error(err);
     }
   };
-  
 
   return (
     <div className="stock-card">
