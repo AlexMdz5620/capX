@@ -20,9 +20,6 @@ public class StockHolding {
     private int quantity;
 
     @NotNull
-    private int currentPrice;
-
-    @NotNull
     private double buyPrice;
 
     @ManyToOne
@@ -61,14 +58,6 @@ public class StockHolding {
 
     public void setBuyPrice(double buyPrice) {
         this.buyPrice = buyPrice;
-    }
-
-    public int getCurrentPrice() {
-        return currentPrice;
-    }
-
-    public void setCurrentPrice(int currentPrice) {
-        this.currentPrice = currentPrice;
     }
 
     public User getUser() {
